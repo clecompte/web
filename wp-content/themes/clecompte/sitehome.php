@@ -17,24 +17,27 @@ Template Name: Homepage
   </section>
   
   <section id="updates_content">
-    <h6 class="share">Stuff I Like to Share.</h6>
+    <h6 class="share">Stuff I Write.</h6>
     <div class="updates_container">
-      <div class="update_col bookmarks">
-        <h4>Things I Find</h4>
-        <?php echo do_shortcode('[RSSImport display="5" feedurl="http://delicious.com/v2/rss/theprojectweb" 
-date="true"]'); ?>
-        <p class="more_link"><a href="http://www.delicious.com/theprojectweb" title="More Links on Delicious">Get More</a></p>
+      <?php
+        $args = array('posts_per_page' => 10);
+        $home_post_featured = new WP_Query($args);
+        if($home_post_featured->have_posts()) :
+          while($home_post_featured->have_posts()) :
+            $home_post_featured->the_post();
+      ?>
+      <div class="post">
+        <p class="post_date"><strong><?php the_time('F j, Y'); ?></strong></p>
+        <h3 class="post_title"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+        <div class="post_content">
+          <?php global $more; $more = 0; the_content(); ?>
+          <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>" class="more">Keep Reading &raquo;</a>
+        </div>
       </div>
-      <div class="update_col">
-        <h4>Things I Say</h4>
-        <?php echo do_shortcode('[aktt_tweets count=4]'); ?>
-        <p class="more_link"><a href="http://twitter.com/clecompte" title="More Tweets on Twitter">Get More</a></p>
-      </div>
-      <div class="update_col">
-        <h4>Things I Post</h4>
-        <script src="http://feeds.feedburner.com/TheProjectWeb?format=sigpro" type="text/javascript" ></script><noscript><p>Subscribe to RSS headline updates from: <a href="http://feeds.feedburner.com/TheProjectWeb"></a><br/>Powered by FeedBurner</p> </noscript>
-        <p class="more_link"><a href="http://www.theprojectweb.com" title="More Blog Posts from The Project Web">Get More</a></p>
-      </div>
+      <?php
+        endwhile;
+        endif;
+      ?>
     </div>
     <div class="clear"></div>
   </section>

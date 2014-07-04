@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
 
-<title><?php if(is_home()) { echo('Web Design, Project Management, Client Relationships - Chris LeCompte'); } else { wp_title('-', true, right); echo('Chris LeCompte'); } ?></title> 
+<title><?php if(is_home()) { echo('Web Design, Project Management, Client Relationships - Chris LeCompte'); } else { wp_title('-', true, right); echo('Chris LeCompte'); } ?></title>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 <!--[if IE]><link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/ie.css" /><![endif]-->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
@@ -32,10 +32,9 @@
   <header id="page_header">
     <a href="/home/" title="Chris LeCompte" id="logo">Chris LeCompte</a>
     <div class="header_right">
-      <p>I'm passionate about creating awesome websites and managing projects and businesses.</p>
       <nav class="page_nav">
         <ul>
-          <li><a href="/projects/" title="Project Portfolio">Portfolio &amp; Case Studies</a></li>
+          <li><a href="/projects/" title="Project Portfolio">Projects</a></li>
           <li><a href="/about/" title="About Me">About Me</a></li>
           <li><a href="/contact/" title="Contact Me">Contact Me</a></li>
         </ul>

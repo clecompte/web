@@ -7,6 +7,7 @@ Author: Chris LeCompte
 Author URI: http://www.clecompte.com
 Tags: clecompte
 */
+/* VARIABLES */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -63,7 +64,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* VARIABLES */
 body {
   background: url(images/page-bg.png) no-repeat center 25px;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -71,9 +71,11 @@ body {
   margin: 0;
   text-align: center;
 }
-
 body.page-id-2 {
   background: url(images/sub-page-bg.png) no-repeat center 25px;
+}
+body.single {
+  background: none;
 }
 
 a:link {
@@ -160,7 +162,7 @@ em {
 #logo {
   bottom: 35px;
   color: #fff;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", Arial, Helvetica, sans-serif;
   font-size: 2.8em;
   font-weight: bold;
   left: 50px;
@@ -175,6 +177,7 @@ em {
   padding-right: 15px;
   position: relative;
   width: 60%;
+  height: 45px;
 }
 
 .header_right p {
@@ -191,13 +194,17 @@ em {
   list-style: none;
   text-align: right;
   width: 600px;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
 }
 
 .page_nav li {
   display: inline;
-  font-size: 1.2em;
-  font-weight: bold;
+  font-size: 1.4em;
+  font-weight: 100;
   margin-left: 15px;
+  letter-spacing: .02em;
   text-transform: uppercase;
 }
 
@@ -219,7 +226,7 @@ em {
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", Arial, Helvetica, sans-serif;
   font-weight: normal;
   line-height: normal;
 }
@@ -331,7 +338,7 @@ h4 {
 h6 {
   clear: both;
   color: #000;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", Arial, Helvetica, sans-serif;
   font-size: 3.6em;
   font-weight: bold;
   letter-spacing: -.025em;
@@ -374,17 +381,19 @@ h6.title {
 
 #home_buttons a {
   background: url(images/button-off.png) no-repeat center center white;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
   border-radius: 15px;
-  box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px #888888;
+  -moz-box-shadow: 0 0 5px #888888;
+  box-shadow: 0 0 5px #888888;
   float: left;
   height: 186px;
   margin: 15px;
-  moz-border-radius: 15px;
-  moz-box-shadow: 0 0 5px #888;
   padding: 15px;
   position: relative;
-  webkit-border-radius: 15px;
-  webkit-box-shadow: 0 0 5px #888;
   width: 211px;
 }
 
@@ -421,8 +430,51 @@ h6.title {
 }
 
 .updates_container {
-  height: 545px;
-  margin-left: 17px;
+  margin-left: 33px;
+  border-top: 6px solid #4286c6;
+  padding: 30px 150px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(10%, #f9f9f9), color-stop(70%, #ffffff), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(#ffffff, #f9f9f9 10%, #ffffff 70%, #ffffff);
+  background-image: -moz-linear-gradient(#ffffff, #f9f9f9 10%, #ffffff 70%, #ffffff);
+  background-image: -o-linear-gradient(#ffffff, #f9f9f9 10%, #ffffff 70%, #ffffff);
+  background-image: linear-gradient(#ffffff, #f9f9f9 10%, #ffffff 70%, #ffffff);
+}
+.updates_container .post_title {
+  font-size: 3em;
+  font-weight: 100;
+  margin: 0 0 10px 0;
+  border-top: 2px dotted #eee;
+  padding-top: 10px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+.updates_container .post_title a {
+  text-decoration: none;
+}
+.updates_container .post {
+  margin: 30px 0 60px 0;
+}
+.updates_container .post .post_date {
+  font-weight: 100;
+  font-size: 1.3em;
+  color: #999;
+  margin: 0;
+}
+.updates_container .post .post_content {
+  line-height: 1.8em;
+  font-size: 1.4em;
+  color: #666;
+  font-weight: 100;
+}
+.updates_container .post .post_content .more {
+  font-size: 1.2em;
+  text-align: right;
+  display: block;
+}
+
+.post_content ul li,
+.post-single ul li {
+  list-style: square;
+  margin: 15px 0 15px 25px;
 }
 
 .update_col {
@@ -529,10 +581,13 @@ h6.title {
 .content_area {
   background: #fff;
   border: 12px solid #f1f1f1;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
   border-radius: 35px;
   font-size: 1.2em;
   margin: 50px 25px 75px 25px;
-  moz-border-radius: 35px;
   padding: 30px 50px;
 }
 
@@ -622,6 +677,49 @@ h6.title {
   margin: -20px 0 0 6px;
 }
 
+/* POST */
+.post-single .post_date {
+  color: #999;
+  font-size: 1.6em;
+  margin-top: 50px;
+  padding-left: 150px;
+  font-weight: 100;
+}
+.post-single h1 {
+  font-size: 3.4em;
+  font-weight: 600;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 20px 20px 20px 150px;
+  margin: 10px 0 50px 0;
+  color: #222;
+}
+.post-single h3 {
+  font-size: 2em;
+  margin: 50px 0 20px 0;
+}
+.post-single .content_area {
+  border: none;
+  padding: 0 130px 100px 130px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(10%, #f9f9f9), color-stop(70%, #ffffff), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(#ffffff, #f9f9f9 10%, #ffffff 70%, #ffffff);
+  background-image: -moz-linear-gradient(#ffffff, #f9f9f9 10%, #ffffff 70%, #ffffff);
+  background-image: -o-linear-gradient(#ffffff, #f9f9f9 10%, #ffffff 70%, #ffffff);
+  background-image: linear-gradient(#ffffff, #f9f9f9 10%, #ffffff 70%, #ffffff);
+}
+.post-single .content_area p {
+  margin: 25px 0;
+}
+.post-single .content_area p, .post-single .content_area li {
+  font-weight: 100;
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+.post-single .content_area ul {
+  margin: 25px 0 25px 0;
+}
+
+/* PROJECTS */
 .project_highlight {
   color: #666;
   color: #999;
@@ -659,6 +757,10 @@ h6.title {
 
 .single-project .wp-post-image {
   border: 8px solid #ccc;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
   border-radius: 15px;
   margin: 50px auto;
   padding: 1px;
@@ -690,6 +792,10 @@ h6.title {
 
 .ngg-gallery-thumbnail-box img {
   border: 4px solid #ccc;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
   border-radius: 8px;
 }
 
@@ -723,10 +829,11 @@ img.wp-image-1388 {
   font-size: 13px;
   height: 198px;
   margin: 15px 0;
-  moz-transition: all .5s ease;
-  o-transition: all 0.5s ease;
   position: relative;
-  webkit-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   width: 265px;
 }
 
@@ -742,12 +849,13 @@ img.wp-image-1388 {
   height: 35px;
   line-height: 16px;
   margin: 0;
-  moz-transition: all .5s ease;
-  o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   padding: 10px 5px;
   position: absolute;
   text-align: center;
-  webkit-transition: all 0.5s ease;
   width: 242px;
   z-index: 9999;
 }
@@ -758,12 +866,17 @@ img.wp-image-1388 {
 
 .cs_button img {
   border: 5px solid #ddd;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
   border-radius: 6px;
-  moz-transition: all .5s ease;
-  o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   padding: 1px;
   position: absolute;
-  webkit-transition: all 0.5s ease;
 }
 
 .cs_button:hover {
@@ -898,6 +1011,10 @@ img.wp-image-1388 {
 
 .client_website {
   border: 8px solid #eee;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
   border-radius: 12px;
   margin: 0 auto;
   padding: 1px;
