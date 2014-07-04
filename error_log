@@ -1,4 +1,0 @@
-[18-Jan-2014 15:10:40 UTC] PHP Fatal error:  Class 'Memcache' not found in /home/clecompt/public_html/wp-content/object-cache.php on line 346
-[18-Jan-2014 15:13:59 UTC] PHP Fatal error:  Class 'Memcache' not found in /home/clecompt/public_html/wp-content/object-cache.php on line 346
-[18-Jan-2014 15:15:24 UTC] PHP Fatal error:  Class 'Memcache' not found in /home/clecompt/public_html/wp-content/object-cache.php on line 346
-[18-Jan-2014 15:15:27 UTC] PHP Fatal error:  Class 'Memcache' not found in /home/clecompt/public_html/wp-content/object-cache.php on line 346
