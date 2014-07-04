@@ -1,0 +1,68 @@
+Options -Indexes
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+
+
+Redirect 301 /think-before-you-design/ http://www.theprojectweb.com/think-before-you-design/
+Redirect 301 /preventing-design-redirection-in-the-middle-of-projects/ http://www.theprojectweb.com/preventing-design-redirection-in-the-middle-of-projects/
+Redirect 301 /ipad-in-web-design-project-management/ http://www.theprojectweb.com/ipad-in-web-design-project-management/
+Redirect 301 /when-a-client-hates-your-work/ http://www.theprojectweb.com/when-a-client-hates-your-work/
+Redirect 301 /dealing-with-difficult-clients/ http://www.theprojectweb.com/dealing-with-difficult-clients/
+Redirect 301 /managing-hacked-client-wordpress-sites/ http://www.theprojectweb.com/managing-hacked-client-wordpress-sites/
+Redirect 301 /defining-the-freelance-project-manager/ http://www.theprojectweb.com/defining-the-freelance-project-manager/
+Redirect 301 /introducing-the-project-web-podcast/ http://www.theprojectweb.com/introducing-the-project-web-podcast/
+Redirect 301 /communicating-complex-concepts-to-clients/ http://www.theprojectweb.com/communicating-complex-concepts-to-clients/
+Redirect 301 /when-to-give-up-on-web-project/ http://www.theprojectweb.com/when-to-give-up-on-web-project/
+Redirect 301 /planning-goes-a-long-way-in-web-projects/ http://www.theprojectweb.com/planning-goes-a-long-way-in-web-projects/
+Redirect 301 /art-of-finishing-a-project/ http://www.theprojectweb.com/art-of-finishing-a-project/
+Redirect 301 /your-client-hates-your-work/ http://www.theprojectweb.com/your-client-hates-your-work/
+Redirect 301 /ways-to-prevent-angry-clients-from-destroying-your-project/ http://www.theprojectweb.com/ways-to-prevent-angry-clients-from-destroying-your-project/
+Redirect 301 /six-project-management-skills-web-design-freelancer/ http://www.theprojectweb.com/six-project-management-skills-web-design-freelancer/
+Redirect 301 /building-zones-how-to-get-more-done-on-your-projects/ http://www.theprojectweb.com/building-zones-how-to-get-more-done-on-your-projects/
+Redirect 301 /10-traits-of-highly-effective-milestones/ http://www.theprojectweb.com/10-traits-of-highly-effective-milestones/
+Redirect 301 /improve-quality-in-projects-and-reduce-stress/ http://www.theprojectweb.com/improve-quality-in-projects-and-reduce-stress/
+Redirect 301 /2009-design-projects-things-changing-for-2010/ http://www.theprojectweb.com/2009-design-projects-things-changing-for-2010/
+Redirect 301 /tracking-time-spent-on-projects/ http://www.theprojectweb.com/tracking-time-spent-on-projects/
+Redirect 301 /web-design-projects-over-the-holidays/ http://www.theprojectweb.com/web-design-projects-over-the-holidays/
+Redirect 301 /batch-processing-to-get-things-done-on-projects/ http://www.theprojectweb.com/batch-processing-to-get-things-done-on-projects/
+Redirect 301 /dealing-with-multiple-points-of-contact/ http://www.theprojectweb.com/dealing-with-multiple-points-of-contact/
+Redirect 301 /eight-ways-to-combat-the-content-crunch/ http://www.theprojectweb.com/eight-ways-to-combat-the-content-crunch/
+Redirect 301 /taking-projects-day-by-day/ http://www.theprojectweb.com/taking-projects-day-by-day/
+Redirect 301 /adding-annotations-to-wireframes-and-designs/ http://www.theprojectweb.com/adding-annotations-to-wireframes-and-designs/
+Redirect 301 /planning-effective-milestones-web-design-projects/ http://www.theprojectweb.com/planning-effective-milestones-web-design-projects/
+Redirect 301 /use-twitter-with-prospects-clients-before-during-after-web-design-projects/ http://www.theprojectweb.com/use-twitter-with-prospects-clients-before-during-after-web-design-projects/
+Redirect 301 /simple-warning-signs-of-bad-project/ http://www.theprojectweb.com/simple-warning-signs-of-bad-project/
+Redirect 301 /plan-to-handle-client-crisis-situations/ http://www.theprojectweb.com/plan-to-handle-client-crisis-situations/
+Redirect 301 /stop-scope-creep-web-design-project/ http://www.theprojectweb.com/stop-scope-creep-web-design-project/
+Redirect 301 /use-facebook-to-connect-with-clients/ http://www.theprojectweb.com/use-facebook-to-connect-with-clients/
+Redirect 301 /how-far-for-web-design-client/ http://www.theprojectweb.com/how-far-for-web-design-client/
+Redirect 301 /speeding-up-web-design-projects/ http://www.theprojectweb.com/speeding-up-web-design-projects/
+Redirect 301 /control-your-client-communication/ http://www.theprojectweb.com/control-your-client-communication/
+Redirect 301 /bubble-frames-rapid-prototype-wireframes-ideas/ http://www.theprojectweb.com/bubble-frames-rapid-prototype-wireframes-ideas/
+Redirect 301 /50-ways-to-get-web-site-content-from-clients/ http://www.theprojectweb.com/50-ways-to-get-web-site-content-from-clients/
+
+Redirect 301 /15-ways-to-make-your-contact-form-more-effective/ http://www.theprojectweb.com/15-ways-to-make-your-contact-form-more-effective/
+Redirect 301 /building-simple-jquery-rotating-carousel/ http://www.theprojectweb.com/building-simple-jquery-rotating-carousel/
+Redirect 301 /death-and-transformation-in-web-design/ http://www.theprojectweb.com/death-and-transformation-in-web-design/
+Redirect 301 /the-death-of-web-design/ http://www.theprojectweb.com/the-death-of-web-design/
+Redirect 301 /whos-the-designer-you-or-the-client/ http://www.theprojectweb.com/whos-the-designer-you-or-the-client/
+Redirect 301 /forget-the-details/ http://www.theprojectweb.com/forget-the-details/
+Redirect 301 /building-dynamic-navigation-using-javascript-and-jquery/ http://www.theprojectweb.com/building-dynamic-navigation-using-javascript-and-jquery/
+Redirect 301 /dont-let-web-clients-walk-all-over-you/ http://www.theprojectweb.com/dont-let-web-clients-walk-all-over-you/
+Redirect 301 /my-meeting-length-philosophy/ http://www.theprojectweb.com/my-meeting-length-philosophy/
+Redirect 301 /valuing-your-time-simple-measures/ http://www.theprojectweb.com/valuing-your-time-simple-measures/
+Redirect 301 /state-of-the-web-design-industry/ http://www.theprojectweb.com/state-of-the-web-design-industry/
+Redirect 301 /phase-out-microsoft-ie6/ http://www.theprojectweb.com/phase-out-microsoft-ie6/
+Redirect 301 /fixing-the-non-updating-feedburner-issue-once-and-for-all/ http://www.theprojectweb.com/fixing-the-non-updating-feedburner-issue-once-and-for-all/
+Redirect 301 /you-will-never-succeed-as-a-web-designer/ http://www.theprojectweb.com/you-will-never-succeed-as-a-web-designer/

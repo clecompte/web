@@ -1,0 +1,381 @@
+@media screen and (max-width: 1100px) {
+	.home #page_footer
+ {
+		border-left: none;
+		margin: 50px auto 0 auto;
+		padding: 30px 0;
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+	body
+ {
+		background: none;
+	}
+
+	#page_content
+ {
+		width: 100%;
+	}
+
+	#updates_content
+ {
+		border-left: none;
+		width: 100%;
+	}
+
+	.update_col
+ {
+		float: left;
+		font-size: 1em;
+		margin-left: 1%;
+		padding-left: 1%;
+		padding-right: 1%;
+		width: 30%;
+	}
+
+	.updates_container
+ {
+		margin-left: 0;
+	}
+
+	#page_header
+ {
+		background: url(images/header-bg.png) no-repeat -35px top;
+		border-right: none;
+		width: 100%;
+	}
+
+	#home_buttons
+ {
+		background: #efefef;
+		text-align: center;
+		width: 100%;
+	}
+
+	#home_buttons a
+ {
+		display: inline-block;
+		float: none;
+		margin: 0 auto;
+		max-width: 211px;
+	}
+
+	#home_buttons a span
+ {
+		text-align: left;
+	}
+
+	.button
+ {
+		display: inline-block;
+		margin: 1%;
+		width: 30%;
+	}
+
+}
+
+@media screen and (max-width: 960px) {
+	#page_header
+ {
+		height: auto;
+	}
+
+	.header_right
+ {
+		background: #4286c6;
+		margin-top: 0;
+		padding-bottom: 10px;
+		padding-right: 0;
+		text-align: center;
+		width: 100%;
+	}
+
+	#logo
+ {
+		display: block;
+		margin: 0 auto;
+		padding-bottom: 1px;
+		padding-top: 20px;
+		position: static;
+		text-align: center;
+		width: 100%;
+	}
+
+	h6
+ {
+		font-size: 3em;
+	}
+
+	h6.tagline
+ {
+		line-height: 1em;
+		padding-top: 20px;
+	}
+
+	h6.title
+ {
+		margin-top: 50px;
+	}
+
+	.header_right p, .page_nav
+ {
+		float: none;
+		width: 100%;
+	}
+
+	.header_right p
+ {
+		line-height: 1.2em;
+	}
+
+	.page_nav
+ {
+		text-align: center;
+	}
+
+	.page_nav li
+ {
+		display: inline;
+		float: none;
+		margin: 0 7px;
+	}
+
+	#home_buttons
+ {
+		font-size: .9em;
+		margin: 20px 0 30px 0;
+		overflow: hidden;
+	}
+
+	.content_area
+ {
+		border: none;
+		margin: 30px 0;
+		padding: 30px 10px;
+	}
+
+	.project_highlight
+ {
+		font-size: 1.2em;
+		margin: 0 10px 15px 10px;
+	}
+
+	.cs_content
+ {
+		clear: both;
+		margin: 20px auto;
+		width: 530px;
+	}
+
+	.project_container img
+ {
+		height: auto;
+		max-width: 100%;
+	}
+
+	.single-project .wp-post-image
+ {
+		border-left: none;
+		border-radius: 0;
+		border-right: none;
+		padding: 3px 0;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+	.client_website
+ {
+		clear: both;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 550px;
+	}
+
+	.tasks
+ {
+		font-size: 1.1em;
+		line-height: 1.1em;
+		text-align: center;
+	}
+
+	.field_line label
+ {
+		width: 28%;
+	}
+
+	.wpcf7-form-control-wrap
+ {
+		width: 70%;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	h6
+ {
+		font-size: 2.6em;
+	}
+
+	h4
+ {
+		font-size: 1.6em;
+	}
+
+	.page_nav
+ {
+		font-size: .9em;
+	}
+
+	.header_right p
+ {
+		line-height: 1.1em;
+		margin: 0 10% 10px 10%;
+		width: 80%;
+	}
+
+	#home_buttons
+ {
+		background: none;
+		font-size: .8em;
+		margin: 20px 0;
+	}
+
+	#home_buttons a
+ {
+		height: 100px;
+	}
+
+	#home_buttons a span
+ {
+		display: block;
+		padding-right: 200px;
+	}
+
+	#updates_content
+ {
+		background: none;
+		padding: 0;
+	}
+
+	.update_col
+ {
+		background: #eee;
+		float: none;
+		height: auto;
+		margin-left: 0;
+		padding: 4% 4% 40px 4%;
+		width: 92%;
+	}
+
+	h6.share
+ {
+		color: #000;
+		height: auto;
+		line-height: 2em;
+	}
+
+	.more_link
+ {
+		display: block;
+		float: right;
+		position: relative;
+	}
+
+	.content_area
+ {
+		border: none;
+		font-size: 1.1em;
+		margin: 0;
+		padding: 10px 20px;
+	}
+
+	.project_highlight
+ {
+		margin-bottom: 0;
+	}
+
+	.client_website
+ {
+		height: auto;
+		max-width: 500px;
+	}
+
+	.field_line
+ {
+		margin-bottom: 10px;
+	}
+
+	.field_line label
+ {
+		clear: both;
+		display: block;
+		float: none;
+		margin-right: none;
+		padding-top: 20px;
+		text-align: center;
+		width: 100%;
+	}
+
+	.wpcf7-form-control-wrap
+ {
+		float: none;
+		text-align: center;
+		width: 97%;
+	}
+
+	.wpcf7-text
+ {
+		background: none;
+		border: 1px solid #ccc;
+		font-size: 1.1em;
+		height: auto;
+		padding: 10px;
+		width: 97%;
+	}
+
+	.wpcf7-form-control-wrap textarea
+ {
+		background: none;
+		border: 1px solid #ccc;
+		font-size: 1.1em;
+		height: 200px;
+		padding: 10px;
+		width: 97%;
+	}
+
+	.wpcf7-submit
+ {
+		display: block;
+		font-size: 1.3em;
+		font-weight: bold;
+		margin: 0 auto;
+	}
+
+	#page_footer
+ {
+		font-size: 1.4em;
+		padding-top: 15em;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+	.page_nav li
+ {
+		display: block;
+		margin: 5px 0;
+		text-align: center;
+		width: 100%;
+	}
+
+	#home_buttons
+ {
+		font-size: .6em;
+	}
+
+}

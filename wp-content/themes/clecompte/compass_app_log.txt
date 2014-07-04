@@ -1,0 +1,62 @@
+2014-07-04 13:05:26 identical stylesheets/ie.css 
+2014-07-04 13:05:26 identical stylesheets/screen.css 
+2014-07-04 13:05:37 identical stylesheets/ie.css 
+2014-07-04 13:05:37 identical stylesheets/screen.css 
+2014-07-04 13:05:48 identical stylesheets/ie.css 
+2014-07-04 13:05:48 identical stylesheets/screen.css 
+2014-07-04 13:06:24 identical stylesheets/ie.css 
+2014-07-04 13:06:24 identical stylesheets/screen.css 
+2014-07-04 13:07:08 identical stylesheets/ie.css 
+2014-07-04 13:07:08 identical stylesheets/screen.css 
+2014-07-04 13:08:00 identical stylesheets/ie.css 
+2014-07-04 13:08:01 identical stylesheets/screen.css 
+2014-07-04 13:08:14 overwrite ie.css 
+2014-07-04 13:08:14    create screen.css 
+2014-07-04 13:08:40 identical ie.css 
+2014-07-04 13:08:41 identical screen.css 
+2014-07-04 13:08:41 overwrite style.css 
+2014-07-04 13:09:27 overwrite style.css 
+2014-07-04 13:11:05     error sass/style.scss (Line 11: Invalid CSS after "@import ": expected file to import (string or url()), was "compass/reset;")
+2014-07-04 13:11:05 overwrite style.css 
+2014-07-04 13:11:17     error sass/style.scss (Line 853: Invalid CSS after "@media screen and ": expected media expression (e.g. (min-device-width: 800px)), was "max-width 1100px{")
+2014-07-04 13:11:17 overwrite style.css 
+2014-07-04 13:13:38 overwrite style.css 
+2014-07-04 13:14:01 overwrite style.css 
+2014-07-04 13:14:06 identical style.css 
+2014-07-04 13:18:14     error sass/style.scss (Line 14: Invalid CSS after "...nt: font-family": expected selector or at-rule, was ": 'Open Sans', ...")
+2014-07-04 13:18:14 overwrite style.css 
+2014-07-04 13:18:21 overwrite style.css 
+2014-07-04 13:18:26 overwrite style.css 
+2014-07-04 13:19:51     error sass/style.scss (Line 908: File to import not found or unreadable: reponsive.scss.
+Load paths:
+  /Users/clecompte/Documents/CLeCompte.com/Migration/wp-content/themes/clecompte/sass
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-normalize-1.4.3/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-2.3.2.1/vendor/assets/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/susy-1.0.9/sass
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.3.1/scss
+  Compass::SpriteImporter
+  /vendor/assets/stylesheets)
+2014-07-04 13:19:51 overwrite style.css 
+2014-07-04 13:20:19     error sass/style.scss (Line 908: File to import not found or unreadable: reponsive.scss.
+Load paths:
+  /Users/clecompte/Documents/CLeCompte.com/Migration/wp-content/themes/clecompte/sass
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-normalize-1.4.3/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-2.3.2.1/vendor/assets/stylesheets
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/susy-1.0.9/sass
+  /Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-4.3.1/scss
+  Compass::SpriteImporter
+  /vendor/assets/stylesheets)
+2014-07-04 13:20:19 overwrite style.css 
+2014-07-04 13:20:32 overwrite style.css 
+2014-07-04 13:21:59 overwrite style.css 
+2014-07-04 13:22:10 overwrite style.css 
+2014-07-04 13:22:31 overwrite style.css 
+2014-07-04 13:22:53 overwrite style.css 
