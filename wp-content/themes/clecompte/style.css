@@ -74,7 +74,7 @@ body {
 body.page-id-2 {
   background: url(images/sub-page-bg.png) no-repeat center 25px;
 }
-body.single {
+body.single, body.blog {
   background: none;
 }
 
@@ -433,22 +433,11 @@ h6.title {
   margin-left: 33px;
   border-top: 6px solid #4286c6;
   padding: 30px 150px;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(10%, #f9f9f9), color-stop(70%, #ffffff), color-stop(100%, #ffffff));
-  background-image: -webkit-linear-gradient(#ffffff, #f9f9f9 10%, #ffffff 70%, #ffffff);
-  background-image: -moz-linear-gradient(#ffffff, #f9f9f9 10%, #ffffff 70%, #ffffff);
-  background-image: -o-linear-gradient(#ffffff, #f9f9f9 10%, #ffffff 70%, #ffffff);
-  background-image: linear-gradient(#ffffff, #f9f9f9 10%, #ffffff 70%, #ffffff);
-}
-.updates_container .post_title {
-  font-size: 3em;
-  font-weight: 100;
-  margin: 0 0 10px 0;
-  border-top: 2px dotted #eee;
-  padding-top: 10px;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-}
-.updates_container .post_title a {
-  text-decoration: none;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(5%, #f3f3f3), color-stop(70%, #ffffff), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(#ffffff, #f3f3f3 5%, #ffffff 70%, #ffffff);
+  background-image: -moz-linear-gradient(#ffffff, #f3f3f3 5%, #ffffff 70%, #ffffff);
+  background-image: -o-linear-gradient(#ffffff, #f3f3f3 5%, #ffffff 70%, #ffffff);
+  background-image: linear-gradient(#ffffff, #f3f3f3 5%, #ffffff 70%, #ffffff);
 }
 .updates_container .post {
   margin: 30px 0 60px 0;
@@ -465,10 +454,40 @@ h6.title {
   color: #666;
   font-weight: 100;
 }
-.updates_container .post .post_content .more {
+
+.post_title,
+.blog .post-single h1 {
+  font-size: 3em;
+  font-weight: 100;
+  margin: 0 0 10px 0;
+  border-top: 2px dotted #eee;
+  padding-top: 10px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+.post_title a,
+.blog .post-single h1 a {
+  text-decoration: none;
+}
+
+.more {
   font-size: 1.2em;
   text-align: right;
   display: block;
+  text-decoration: none;
+}
+.more i {
+  color: #000;
+}
+
+a.more-lg {
+  font-size: 1.8em;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 auto;
+  display: block;
+  border-top: 2px solid #eee;
+  padding-top: 20px;
 }
 
 .post_content ul li,
@@ -682,16 +701,14 @@ h6.title {
   color: #999;
   font-size: 1.6em;
   margin-top: 50px;
-  padding-left: 150px;
   font-weight: 100;
 }
 .post-single h1 {
   font-size: 3.4em;
   font-weight: 600;
   border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  padding: 20px 20px 20px 150px;
-  margin: 10px 0 50px 0;
+  padding: 20px 20px 0 0;
+  margin: 10px 0 0 0;
   color: #222;
 }
 .post-single h3 {
@@ -701,11 +718,12 @@ h6.title {
 .post-single .content_area {
   border: none;
   padding: 0 130px 100px 130px;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(10%, #f9f9f9), color-stop(70%, #ffffff), color-stop(100%, #ffffff));
-  background-image: -webkit-linear-gradient(#ffffff, #f9f9f9 10%, #ffffff 70%, #ffffff);
-  background-image: -moz-linear-gradient(#ffffff, #f9f9f9 10%, #ffffff 70%, #ffffff);
-  background-image: -o-linear-gradient(#ffffff, #f9f9f9 10%, #ffffff 70%, #ffffff);
-  background-image: linear-gradient(#ffffff, #f9f9f9 10%, #ffffff 70%, #ffffff);
+  margin: 30px 0 75px 0;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(10%, #f3f3f3), color-stop(70%, #ffffff), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(#ffffff, #f3f3f3 10%, #ffffff 70%, #ffffff);
+  background-image: -moz-linear-gradient(#ffffff, #f3f3f3 10%, #ffffff 70%, #ffffff);
+  background-image: -o-linear-gradient(#ffffff, #f3f3f3 10%, #ffffff 70%, #ffffff);
+  background-image: linear-gradient(#ffffff, #f3f3f3 10%, #ffffff 70%, #ffffff);
 }
 .post-single .content_area p {
   margin: 25px 0;
@@ -717,6 +735,46 @@ h6.title {
 }
 .post-single .content_area ul {
   margin: 25px 0 25px 0;
+}
+
+.wp-pagenavi {
+  margin: 50px auto 0 auto;
+  clear: both;
+  text-align: center;
+}
+.wp-pagenavi span, .wp-pagenavi a {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  border-color: #eee !important;
+}
+.wp-pagenavi .page {
+  background: #eee;
+  color: #333;
+  border: none;
+}
+
+.blog .post_date {
+  padding-top: 40px;
+}
+
+/* 404 */
+.error404 .content_area {
+  height: 600px;
+  font-size: 2em;
+  font-weight: 100;
+  font-style: italic;
+  text-align: center;
+  margin-top: 40px;
+  color: #666;
+}
+.error404 h1 {
+  text-align: center;
+  font-size: 7em;
+  line-height: 1em;
+  margin-top: 20px;
 }
 
 /* PROJECTS */
