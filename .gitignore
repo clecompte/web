@@ -9,6 +9,8 @@ sitemap.*
 wp-config.php
 sftp-config.json
 *.sublime-*
+compass_app_log.txt
+.sass-cache/*
 
 # Hidden system files
 *.DS_Store
