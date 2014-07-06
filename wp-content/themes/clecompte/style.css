@@ -7,7 +7,6 @@ Author: Chris LeCompte
 Author URI: http://www.clecompte.com
 Tags: clecompte
 */
-/* VARIABLES */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -697,6 +696,9 @@ a.more-lg {
 }
 
 /* POST */
+.post-single {
+  padding-top: 30px;
+}
 .post-single .post_date {
   color: #999;
   font-size: 1.6em;
@@ -704,12 +706,13 @@ a.more-lg {
   font-weight: 100;
 }
 .post-single h1 {
-  font-size: 3.4em;
-  font-weight: 600;
+  font-size: 3em;
+  font-weight: 500;
   border-top: 1px solid #eee;
   padding: 20px 20px 0 0;
   margin: 10px 0 0 0;
   color: #222;
+  line-height: 1.4em;
 }
 .post-single h3 {
   font-size: 2em;
@@ -727,6 +730,11 @@ a.more-lg {
 }
 .post-single .content_area p {
   margin: 25px 0;
+}
+.post-single .content_area p.wp-caption-text {
+  font-size: .9em;
+  margin-top: 5px;
+  color: #888;
 }
 .post-single .content_area p, .post-single .content_area li {
   font-weight: 100;
@@ -1129,6 +1137,12 @@ img.wp-image-1388 {
   z-index: 9999;
 }
 
+.post-single img,
+.wp-caption {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
 @media screen and (max-width: 1100px) {
   .home #page_footer {
     border-left: none;
@@ -1198,6 +1212,10 @@ img.wp-image-1388 {
     height: auto;
   }
 
+  .page_nav {
+    right: 0;
+  }
+
   .header_right {
     background: #4286c6;
     margin-top: 0;
@@ -1205,6 +1223,16 @@ img.wp-image-1388 {
     padding-right: 0;
     text-align: center;
     width: 100%;
+    height: 30px;
+    float: none;
+    clear: both;
+    background: #4286c6;
+    position: static;
+    padding-bottom: 30px;
+  }
+  .header_right ul {
+    margin: 0 0 20px 0;
+    text-align: center;
   }
 
   #logo {
@@ -1285,6 +1313,12 @@ img.wp-image-1388 {
   }
 }
 @media screen and (max-width: 800px) {
+  .updates_container,
+  .post-single .content_area {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   .client_website {
     clear: both;
     height: auto;
@@ -1434,11 +1468,19 @@ img.wp-image-1388 {
   }
 }
 @media screen and (max-width: 480px) {
+  .page_nav {
+    background: #4286c6;
+  }
+
   .page_nav li {
     display: block;
     margin: 5px 0;
     text-align: center;
     width: 100%;
+  }
+
+  .header_right {
+    margin-top: 50px;
   }
 
   #home_buttons {

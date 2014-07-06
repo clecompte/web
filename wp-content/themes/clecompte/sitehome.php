@@ -27,7 +27,7 @@ Template Name: Homepage
         <p class="post_date"><strong><?php the_time('F j, Y'); ?></strong></p>
         <h3 class="post_title"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
         <div class="post_content">
-          <?php global $more; $more = 0; the_content(); ?>
+          <?php global $more; $more = 0; the_content(""); ?>
           <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>" class="more">Keep Reading <i class="fa fa-long-arrow-right"></i></a>
         </div>
       </div>

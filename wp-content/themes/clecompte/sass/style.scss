@@ -13,9 +13,11 @@ Tags: clecompte
 @import "compass/css3/transition";
 @import "compass/css3/images";
 
-/* VARIABLES */
+// VARIABLES
 $mainFont: 'Open Sans', Arial, Helvetica, sans-serif;
 $mainFontcondensed: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+
+$colorBlue: #4286C6;
 
 @import "compass/reset";
 
@@ -649,6 +651,7 @@ a.more-lg {
 
 /* POST */
 .post-single {
+	padding-top: 30px;
 
 	.post_date {
 		color: #999;
@@ -658,12 +661,13 @@ a.more-lg {
 	}
 
 	h1 {
-		font-size: 3.4em;
-		font-weight: 600;
+		font-size: 3em;
+		font-weight: 500;
 		border-top: 1px solid #eee;
 		padding: 20px 20px 0 0;
 		margin: 10px 0 0 0;
 		color: #222;
+		line-height: 1.4em;
 	}
 
 	h3 {
@@ -680,6 +684,12 @@ a.more-lg {
 
 		p {
 			margin: 25px 0;
+
+			&.wp-caption-text {
+				font-size: .9em;
+				margin-top: 5px;
+				color: #888;
+			}
 		}
 
 		p, li {

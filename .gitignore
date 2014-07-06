@@ -7,6 +7,8 @@ wp-content/upgrade/*
 wp-content/uploads/*
 sitemap.*
 wp-config.php
+sftp-config.json
+*.sublime-*
 
 # Hidden system files
 *.DS_Store
