@@ -17,10 +17,6 @@ Template Name: Projects
         <img src="<?php bloginfo('stylesheet_directory'); ?>/images/projects/cs-cxo.jpg" alt="" width="240" height="198" />
         <p><span>CXO Advisory:</span> Investing research and analysis delievered daily.</p>
       </a>
-      <a class="cs_button" href="/project/potomac-local/">
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/projects/cs-pl.jpg" alt="" width="240" height="198" />
-        <p><span>Potomac Local:</span> Providing local news to Northern Virginia.</p>
-      </a>
       <a class="cs_button" href="/project/center-for-the-arts/">
         <img src="<?php bloginfo('stylesheet_directory'); ?>/images/projects/cs-cfa.jpg" alt="" width="240" height="198" />
         <p><span>Center for the Arts:</span> The creative spirit of Old Town Manassas.</p>

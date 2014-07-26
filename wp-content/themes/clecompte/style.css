@@ -744,6 +744,38 @@ a.more-lg {
 }
 .post-single .content_area ul {
   margin: 25px 0 25px 0;
+  font-size: 14px;
+}
+.post-single .content_area ul li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.post-single .content_area ul ul li {
+  list-style: disc;
+}
+.post-single pre {
+  background: #eee;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  padding: 10px;
+}
+.post-single code {
+  font-family: "Courier New", Arial, Helvetica, sans-serif;
+  line-height: 1.6em;
+}
+.post-single p.post-contact {
+  font-family: Georgia, Times, serif;
+  font-size: 1.4em;
+  font-style: italic;
+  color: #666;
+  text-align: center;
+  border-top: 2px solid #ccc;
+  padding-top: 35px;
+  margin-top: 50px;
 }
 
 .wp-pagenavi {

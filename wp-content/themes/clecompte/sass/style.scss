@@ -701,7 +701,40 @@ a.more-lg {
 
 		ul {
 			margin: 25px 0 25px 0;
+			font-size: 14px;
+
+			li {
+				margin-top: 5px;
+				margin-bottom: 5px;
+			}
+
+			ul li {
+				list-style: disc;;
+			}
 		}
+	}
+
+	pre {
+		background: #eee;
+		border: 2px solid #ccc;
+		@include border-radius(8px);
+		padding: 10px;
+	}
+
+	code {
+		font-family: "Courier New", Arial, Helvetica, sans-serif;
+		line-height: 1.6em;
+	}
+
+	p.post-contact {
+		font-family: Georgia, Times, serif;
+		font-size: 1.4em;
+		font-style: italic;
+		color: #666;
+		text-align: center;
+		border-top: 2px solid #ccc;
+		padding-top: 35px;
+		margin-top: 50px;
 	}
 }
 
